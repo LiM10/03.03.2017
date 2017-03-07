@@ -1,0 +1,28 @@
+button.accordion {
+    background-color: lightblue;
+    color: darkgreen;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    font: 18px bold;
+    font-family: cursive;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+div.paragraph {
+    padding: 1px 18px;
+    background-color: #d4f442;
+    display: none;
+    font: 18px bold;
+    font-family: cursive;
+    border-radius: 5px;
+}

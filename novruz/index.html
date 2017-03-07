@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	setInterval( function(){
+
+		now = new Date();
+		holiday = new Date(2017, 2, 21);
+		time = holiday.getTime() - now.getTime();
+
+		sec=Math.floor(time/1000);
+		min=Math.floor(sec/60);
+		hour=Math.floor(min/60);
+		day=Math.floor(hour/24);
+		month=Math.floor(day/30);
+
+
+		milliSaniye=time-(sec*1000);
+		saniye=sec-min*60;
+		deqiqe=min-hour*60;
+		saat=hour-day*24;
+		gun=day-month*30;
+
+		document.write(' '+gun+' gun '+' '+saat+' saat'+' '+deqiqe+' deqiqe'+' '+saniye+' saniye'+' ');
+		},1000);
+</script>
+</body>
+</html>
